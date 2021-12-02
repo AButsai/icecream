@@ -23,17 +23,21 @@ img {
 
 // проверте все ли правильно с расчетом контейнера
 .container {
-  max-width: 310px;
+  max-width: 3200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 768px) {
     max-width: 730px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1180px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
 
