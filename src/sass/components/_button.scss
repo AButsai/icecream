@@ -1,16 +1,22 @@
 .button {
-  font-size: 14px;
-  line-height: 1.3;
-  padding: 11px 20px;
+  font-size: 8px;
+  line-height: 1.25;
+  padding: 7px 13px;
   color: $color-primary;
   background-color: $color-white;
   border: none;
   border-radius: 24px;
 
   transition: background-color $duration $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 11px 20px;
+  }
 }
 
-.button--first {
+.button--red {
   color: $color-white;
   background-color: $color-primary;
 
@@ -20,7 +26,7 @@
   }
 }
 
-.button--second {
+.button--white {
   &:focus-within,
   &:hover {
     background-color: $color-hover-btn-second;
@@ -30,11 +36,18 @@
 .button--shevron {
   font-weight: 700;
   font-size: 16px;
-  padding: 12px 37px;
+  padding: 12px 48px;
 
   &:focus-within,
   &:hover {
     background-color: $color-hover-btn-second;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 43px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 12px 37px;
   }
 }
 

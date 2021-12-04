@@ -50,16 +50,39 @@
 
     <div class="hero">
       <div class="hero__content">
+        <img
+          class="hero__img-first"
+          srcset="./images/hero-img-1.png 1x, ./images/hero-img-1@2x.png 2x"
+          src="./images/hero-img-1.png"
+          alt="bio eco"
+        />
+        <img
+          class="hero__img-second"
+          srcset="./images/hero-img-2.png 1x, ./images/hero-img-2@2x.png 2x"
+          src="./images/hero-img-2.png"
+          alt="sooooo tasty"
+        />
+
+        <div class="hero__img-wrap">
+          <span class="hero__img-span"></span>
+          <img
+            class="hero__img-main"
+            srcset="./images/hero-img.png 1x, ./images/hero-img@2x.png 2x"
+            src="./images/hero-img.png"
+            alt="Большое мороженко"
+          />
+        </div>
+
         <div class="hero__title-wrap">
           <h1 class="hero__title">
             ice cream made with <span class="hero__title-span">passion</span>
           </h1>
           <ul class="hero__list">
             <li class="hero__item">
-              <button class="button button--first">Products</button>
+              <button class="button button--red hero__item--margin">Products</button>
             </li>
             <li class="hero__item">
-              <button class="button button--second">How it’s made?</button>
+              <button class="button button--white">How it’s made?</button>
             </li>
           </ul>
         </div>
@@ -82,34 +105,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <button class="button-description button-description--for-hero" type="button">
-            <svg class="button-description__icon button-description__icon--for-hero">
+          <button class="arrow-right arrow-right--for-hero" type="button">
+            <svg class="arrow-right__icon arrow-right__icon--for-hero">
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
-        </div>
-
-        <img
-          class="hero__img-first"
-          srcset="./images/hero-img-1.png 1x, ./images/hero-img-1@2x.png 2x"
-          src="./images/hero-img-1.png"
-          alt="bio eco"
-        />
-        <img
-          class="hero__img-second"
-          srcset="./images/hero-img-2.png 1x, ./images/hero-img-2@2x.png 2x"
-          src="./images/hero-img-2.png"
-          alt="sooooo tasty"
-        />
-
-        <div class="hero__img-wrap">
-          <span class="hero__img-span"></span>
-          <img
-            class="hero__img-main"
-            srcset="./images/hero-img.png 1x, ./images/hero-img@2x.png 2x"
-            src="./images/hero-img.png"
-            alt="Большое мороженко"
-          />
         </div>
       </div>
     </div>
