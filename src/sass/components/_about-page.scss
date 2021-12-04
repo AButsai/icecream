@@ -1,0 +1,151 @@
+.about-section{
+    background-image: url(../images/about-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about-section__text{
+font-family: Titan One;
+font-size: 18px;
+line-height: 1.16;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 15px;
+color: $color-bg-circle;}
+
+@media screen and (min-width: 768px){
+    .about-section__text{
+        font-size: 26px;
+        line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1280px){
+    .about-section__text{
+        font-size: 30px;
+        line-height: 1.13;
+  }
+}
+
+
+
+.about-section__title{font-family: Titan One;
+
+font-size: 34px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $color-primary;
+}
+
+@media screen and (min-width: 768px){
+    .about-section__title{
+    font-size: 48px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1280px){
+    .about-section__title{
+        font-size: 58px;
+        line-height: 1.14;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+    .about-section__block{
+        display: flex; 
+        
+  }
+}
+.about-section__img{
+    margin-right: 16px;
+
+}
+@media screen and (min-width: 768px){
+    .about-section__img{
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+    .about-section__img{
+    margin-right: 76px;
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.about-section__desc{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $color-black;
+    margin-bottom: 47px;
+    margin-top: 46px;
+   
+}
+
+
+.about-section__description{
+    padding-left: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .about-section__desc{
+        font-size: 14px;
+        line-height: 1.76;
+  }
+}
+
+@media screen and (min-width: 1280px){
+    .about-section__desc{
+        font-size: 16px;
+  }
+}
+
+.about-section__paragraf{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.6;
+color: $color-subtext;
+margin-bottom: 16px;
+}
+
+
+@media screen and (min-width: 768px){
+    .about-section__paragraf{
+        font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (min-width: 1280px){
+    .about-section__paragraf{
+    line-height: 1.9;
+    margin-bottom: 45px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .about-section__button{
+        font-size: 16px;
+        line-height: 1.31
+  }
+}
+
+
+.about-section__icon{
+    margin-left: 14px;
+    width: 5px;
+    height: 8px;
+   
+}
