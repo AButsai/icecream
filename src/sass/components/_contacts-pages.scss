@@ -297,8 +297,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .visually-hidden .modal-location {
+  transition: opacity $duration $timing-function;
+  .is-hiden .modal-location {
     transform: translate(-50%, -50%) scale(0.8);
   }
 }
@@ -328,6 +328,10 @@
     height: 600px;
     padding: 0 200px 0 200px;
   }
+}
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 .google-maps {
   width: 100%;

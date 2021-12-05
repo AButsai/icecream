@@ -12,7 +12,7 @@ import './sass/main.scss';
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('visually-hidden');
+    refs.modal.classList.toggle('is-hidden');
    
   }
 })();
