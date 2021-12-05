@@ -19,22 +19,6 @@
 .button--menu {
   font-size: 14px;
   margin-bottom: 32px;
-
-  @media screen and (min-width: 767px) {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-}
-
-.button--menu-mobile {
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-    margin-bottom: 32px;
-  }
 }
 
 .button--red {
@@ -67,10 +51,6 @@
   @media screen and (min-width: 768px) {
     padding: 12px 37px;
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   padding: 12px 37px;
-  // }
 }
 
 .button--about {
