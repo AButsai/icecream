@@ -98,4 +98,50 @@ img {
   font-size: 30px;
   letter-spacing: 0.04em;
   color: #ffa5ba;
+}
+
+.slider-pfoto {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-caption {
+  position: revert;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: black;
+  text-align: center;
+}
+
+.color-dot {
+  color: #C7133E;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.slider-text-decoration {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: #FAFAFA;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.slider-name-decoration {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
