@@ -1,5 +1,4 @@
 .section {
-  position: relative;
   background-color: $color-bg;
 
   height: 502px;
@@ -14,6 +13,11 @@
 }
 
 .container__header {
+  position: relative;
+  height: 100%;
+  @media screen and (max-width: 479px) {
+    overflow: hidden;
+  }
 }
 
 .header {
@@ -42,65 +46,6 @@
 .logo__img {
   width: 199px;
   height: 50px;
-}
-
-.header__menu {
-  display: none;
-
-  transform: translateX(101%);
-  &.is-open {
-    @media screen and (max-width: 480px) {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 250px;
-      height: 502px;
-      padding-top: 60px;
-      background-color: $color-bg-mobile-menu;
-      filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
-      z-index: 2;
-      overflow-y: scroll;
-
-      transition: transform $duration $timing-function;
-      transform: translateX(0);
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 254px;
-    height: 100vh;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
-}
-
-.nav {
-  display: none;
-}
-
-.nav__list {
-}
-
-.nav__item {
-  border: 1px solid $color-border-menu;
-}
-
-.nav__link {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
-  color: $color-white;
-  padding: 13px 0 11px;
-  margin-left: 21px;
-}
-
-.nav__link--active {
-  color: $color-primary;
 }
 
 .hero {
@@ -287,6 +232,12 @@
     height: 133px;
     z-index: 5;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 293px;
+    height: 232px;
+    right: 25px;
+  }
 }
 
 .hero__img-wrap {
@@ -308,6 +259,13 @@
     width: 324px;
     height: 322px;
   }
+
+  @media screen and (min-width: 1200px) {
+    top: 52px;
+    left: 475px;
+    width: 538px;
+    height: 538px;
+  }
 }
 
 .hero__img-main {
@@ -320,5 +278,11 @@
     left: 378px;
     width: 143px;
     height: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 594px;
+    width: 236px;
+    height: 557px;
   }
 }
