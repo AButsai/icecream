@@ -37,7 +37,7 @@
   font-weight: 700;
   font-size: 16px;
   padding: 12px 48px;
-
+  cursor: pointer;
   &:focus-within,
   &:hover {
     background-color: $color-hover-btn-second;
@@ -48,6 +48,23 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 12px 37px;
+  }
+}
+
+.button--shevron__about{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.28;
+  padding: 12px 39px;
+  cursor: pointer;
+  &:focus-within,
+  &:hover {
+    background-color: $color-hover-btn-second;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
   }
 }
 
