@@ -1,10 +1,8 @@
-import './sass/main.scss';
-// модальное окно
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[map-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[map-modal]'),
+    modal: document.querySelector('map-modal'),
   };
   
 
@@ -12,7 +10,7 @@ import './sass/main.scss';
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    refs.modal.classList.toggle('visually-hidden');
    
   }
 })();
