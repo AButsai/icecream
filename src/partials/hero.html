@@ -1,5 +1,34 @@
-<section class="section">
-  <div class="container container__header">
+<section class="section section-hero">
+  <header class="header">
+    <div class="container header-container">
+      <img
+        class="logo__img"
+        srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+        src="./images/logo.png"
+        alt="Логотип"
+      />
+
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+        <li class="header__item"><a href="#" class="header__link">About us</a></li>
+        <li class="header__item"><a href="#" class="header__link">How it’s made?</a></li>
+        <li class="header__item"><a href="#" class="header__link">Our products</a></li>
+        <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+      </ul>
+
+      <button class="button button--shevron button--menu" type="submit">
+        Buy now
+        <svg class="shevron-right" width="8" height="8">
+          <use href="./images/icons.svg#chevron-right"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container hiro-container"></div>
+  </div>
+  <!--<div class="container container__header">
     <header class="header">
       <div class="logo-wrap">
         <a class="logo" href="#">
@@ -55,9 +84,9 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
 
-    <div class="hero">
+  <!-- <div class="hero">
       <div class="hero__content">
         <img
           class="hero__img-first"
@@ -124,5 +153,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </section>

@@ -6,6 +6,10 @@
   background-color: transparent;
   z-index: 3;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 291px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
