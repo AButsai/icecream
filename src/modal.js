@@ -1,10 +1,8 @@
-import './sass/main.scss';
-// модальное окно
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[map-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[map-modal]'),
+    modal: document.querySelector('map-modal'),
   };
   
 
