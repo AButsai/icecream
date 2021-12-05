@@ -7,6 +7,13 @@
   @media screen and (min-width: 768px) {
     height: 399px;
   }
+
+  @media screen and (min-width: 1200px) {
+    height: 665px;
+  }
+}
+
+.container__header {
 }
 
 .header {
@@ -14,6 +21,12 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    display: flex;
+    z-index: 10;
   }
 }
 
@@ -34,9 +47,9 @@
 .header__menu {
   display: none;
 
-  @media screen and (max-width: 480px) {
-    transform: translateX(101%);
-    &.is-open {
+  transform: translateX(101%);
+  &.is-open {
+    @media screen and (max-width: 480px) {
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -66,7 +79,7 @@
 }
 
 .nav {
-  //   display: none;
+  display: none;
 }
 
 .nav__list {
@@ -96,6 +109,11 @@
 .hero__content {
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero__title-wrap {
   position: relative;
   margin-top: 137px;
@@ -103,6 +121,10 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 84px;
   }
 }
 
@@ -120,6 +142,11 @@
     max-width: 162px;
     font-size: 22px;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 277px;
+    font-size: 38px;
+  }
 }
 
 .hero__title-span {
@@ -130,6 +157,9 @@
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
   }
 }
 
@@ -151,18 +181,57 @@
 
 .hero__franchise {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .hero__franchise-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__franchise-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-white;
+  }
+}
+
+.hero__franchise-item--margin {
+  margin-bottom: 13px;
 }
 
 .hero__franchise-number {
+  font-family: $font-family-second;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.15;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-primary;
+  z-index: 1;
 }
 
 .hero__franchise-description {
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: $color-white;
 }
 
 .hero__description {
@@ -192,15 +261,32 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 36;
+    left: 36px;
     bottom: 27px;
     width: 124px;
     height: 126px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 77px;
+    bottom: 45px;
+    width: 188px;
+    height: 191px;
   }
 }
 
 .hero__img-second {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: 34px;
+    bottom: 0;
+    width: 168px;
+    height: 133px;
+    z-index: 5;
+  }
 }
 
 .hero__img-wrap {
