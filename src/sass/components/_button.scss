@@ -16,6 +16,16 @@
   }
 }
 
+.button--menu {
+  width: 209px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .button--red {
   color: $color-white;
   background-color: $color-primary;
@@ -46,12 +56,13 @@
   @media screen and (min-width: 768px) {
     padding: 12px 43px;
   }
+
   @media screen and (min-width: 1200px) {
     padding: 12px 37px;
   }
 }
 
-.button--shevron__about{
+.button--about {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.28;

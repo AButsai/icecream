@@ -1,0 +1,32 @@
+.menu-button {
+  transition: opacity $duration $timing-function;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  z-index: 3;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .menu-button__close {
+  opacity: 0;
+}
+
+.menu-button.is-open .menu-button__close {
+  opacity: 1;
+}
+
+.menu-button.is-open .menu-button__open {
+  opacity: 0;
+}
+
+.menu-button__open {
+  fill: $color-primary;
+}
+
+.menu-button__close {
+  fill: $color-white;
+}
