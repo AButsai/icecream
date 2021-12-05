@@ -1,80 +1,111 @@
 <!-- секция контакты -->
-<section>
+<section class="contacts-section">
   <div class="container">
     <!-- невидимый хедер -->
     <h1 class="visually-hidden">Contacts</h1>
     <!-- список карточек контактов -->
     <ul class="contacts">
       <li class="contacts__card">
-        <span class="contacts__category">cafe</span>
-        <!-- Город -->
-        <div class="contacts__city">
-          <p class="contacts_city-text">Chicago</p>
-          <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
+        <p class="contacts__card-category">cafe</p>
+        <ul class="contacts__card-item">
+          <!-- Город -->
+          <li class="contacts__card--black">Chicago</li>
+          <li class="contacts__card--grey">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </li>
+        </ul>
         <!-- Время работы -->
-        <div class="contacts__working-time">
-          <p class="contacts__working-days">Monday - Friday</p>
-          <span class="contacts__working-hours">08:00 AM - 10:00 PM</span>
-          <p class="contacts__working-days">Saturday - Sunday</p>
-          <span class="contacts__working-hours">08:00 AM - 16:00 PM</span>
-        </div>
-        <!-- Адресс -->
-        <address>
-          <ul>
-            <li><a href="tel:+61(0) 383 766 284"></a>+61(0) 383 766 284</li>
-            <li><a href="mailto:noreply@envato.com"></a>noreply@envato.com</li>
-          </ul>
-        </address>
+        <ul class="contacts__working-time">
+          <li class="contacts__card--black">Monday - Friday</li>
+          <li class="contacts__card-pink">
+            <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+          </li>
+          <li class="contacts__card--black">Saturday - Sunday</li>
+          <li class="contacts__card-pink">
+            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+          </li>
+        </ul>
+        <ul class="adress__list">
+          <li class="adress__tel">
+            <a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="adress__email">
+            <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
       </li>
       <li class="contacts__card">
-        <span class="contacts__category">foodtruck</span>
-        <!-- Город -->
-        <div class="contacts__city">
-          <p class="contacts_city-text">Los Angeles</p>
-          <p ctacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>lass="con
+        <p class="contacts__card-category">food truck</p>
+        <ul class="contacts__card-item">
+          <!-- Город -->
+          <li class="contacts__city">Los Angeles</li>
+          <li class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</li>
+        </ul>
         <!-- Время работы -->
-        <div class="contacts__working-time">
-          <p class="contacts__working-days">Monday - Friday</p>
-          <span class="contacts__working-hours">08:00 AM - 10:00 PM</span>
-          <p class="contacts__working-days">Saturday - Sunday</p>
-          <span class="contacts__working-hours">08:00 AM - 16:00 PM</span>
-        </div>
-        <!-- Адресс -->
-        <address>
-          <ul>
-            <li><a href="tel:+61(0) 383 766 284"></a>+61(0) 383 766 284</li>
-            <li><a href="mailto:noreply@envato.com"></a>noreply@envato.com</li>
-          </ul>
-        </address>
+        <ul class="contacts__working-time">
+          <li class="contacts__card--black">Monday - Friday</li>
+          <li class="contacts__card-pink">
+            <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+          </li>
+          <li class="contacts__card--black">Saturday - Sunday</li>
+          <li class="contacts__card-pink">
+            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+          </li>
+        </ul>
+        <ul class="adress__list">
+          <li class="adress__tel">
+            <a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="adress__email">
+            <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
       </li>
       <li class="contacts__card">
-        <span class="contacts__category">cafe</span>
-        <!-- Город -->
-        <div class="contacts__city">
-          <p class="contacts_city-text">New York</p>
-          <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
+        <p class="contacts__card-category">cafe</p>
+        <ul class="contacts__card-item">
+          <!-- Город -->
+          <li class="contacts__city">New York</li>
+          <li class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</li>
+        </ul>
         <!-- Время работы -->
-        <div class="contacts__working-time">
-          <p class="contacts__working-days">Monday - Friday</p>
-          <span class="contacts__working-hours">08:00 AM - 10:00 PM</span>
-          <p class="contacts__working-days">Saturday - Sunday</p>
-          <span class="contacts__working-hours">08:00 AM - 16:00 PM</span>
-        </div>
-        <!-- Адресс -->
-        <address class="adress">
-          <ul class="adress__list">
-            <li class="adress__tel"><a class="adress-item adress__link" href="tel:+61(0)383766284"></a>+61(0) 383 766 284</li>
-            <li class="adress__email"><a class="adress-item adress__link" href="mailto:noreply@envato.com"></a>noreply@envato.com</li>
-          </ul>
-        </address>
+        <ul class="contacts__working-time">
+          <li class="contacts__card--black">Monday - Friday</li>
+          <li class="contacts__card-pink">
+            <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+          </li>
+          <li class="contacts__card--black">Saturday - Sunday</li>
+          <li class="contacts__card-pink">
+            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+          </li>
+        </ul>
+        <ul class="adress__list">
+          <li class="adress__tel">
+            <a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+          </li>
+          <li class="adress__email">
+            <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
       </li>
     </ul>
-    <ul class="list-btn">
-      <li class="list__item"><button type="button">Our Locations</button></li>
-      <li class="list__item"><button type="button">Franchise</button></li>
+    <ul class="contacts-modal">
+      <li class="contacts__modal-item">
+        <button type="button" class="contacts__button button button--red">
+          Our Locations
+          <svg class="contacts__arrow">
+            <use href="./images/icons.svg#chevron-right"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contacts__modal-item">
+        <button type="button" class="contacts__button button button--white">
+          Franchise
+          <svg class="contacts__arrow">
+            <use href="./images/icons.svg#chevron-right"></use>
+          </svg>
+        </button>
+      </li>
     </ul>
   </div>
 </section>
