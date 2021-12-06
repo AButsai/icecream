@@ -1,117 +1,116 @@
-<section class="section">
-  <div class="container">
+<section class="section section-hero" id="hero">
+  <div class="hro-header-wrapper">
     <header class="header">
-      <a class="logo" href="#">
-        <img
-          class="logo__img"
-          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
-          src="./images/logo.png"
-          alt="Логотип"
-        />
-      </a>
-
-      <svg class="open-menu" width="20" height="12">
-        <use href="./images/icons.svg#menu"></use>
-      </svg>
-
-      <div class="header__menu">
-        <svg class="close-menu" width="14" height="14">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-
-        <button class="button button--shevron" type="submit">
-          Buy now
-          <svg class="shevron-right" width="8" height="8">
-            <use href="./images/icons.svg#chevron-right"></use>
-          </svg>
-        </button>
-
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">About us</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">How it’s made?</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Our products</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="hero">
-      <div class="hero__content">
-        <img
-          class="hero__img-first"
-          srcset="./images/hero-img-1.png 1x, ./images/hero-img-1@2x.png 2x"
-          src="./images/hero-img-1.png"
-          alt="bio eco"
-        />
-        <img
-          class="hero__img-second"
-          srcset="./images/hero-img-2.png 1x, ./images/hero-img-2@2x.png 2x"
-          src="./images/hero-img-2.png"
-          alt="sooooo tasty"
-        />
-
-        <div class="hero__img-wrap">
-          <span class="hero__img-span"></span>
+      <div class="container container-header">
+        <div class="logo">
           <img
-            class="hero__img-main"
-            srcset="./images/hero-img.png 1x, ./images/hero-img@2x.png 2x"
-            src="./images/hero-img.png"
-            alt="Большое мороженко"
+            class="logo__img"
+            srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+            src="./images/logo.png"
+            alt="Логотип"
           />
         </div>
 
-        <div class="hero__title-wrap">
-          <h1 class="hero__title">
-            ice cream made with <span class="hero__title-span">passion</span>
-          </h1>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <button class="button button--red hero__item--margin">Products</button>
+        <div class="header__menu">
+          <svg class="close-menu" width="20" height="12">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+
+          <button class="button button--shevron button--margin" type="submit">
+            Buy now
+            <svg class="shevron-right" width="8" height="8">
+              <use href="./images/icons.svg#chevron-right"></use>
+            </svg>
+          </button>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--first">
+                <a href="#hero" class="nav__link nav__link-active">Home</a>
+              </li>
+              <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+              <li class="nav__item"><a href="#advantages" class="nav__link">How it’s made?</a></li>
+              <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+              <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="button-wrap">
+          <svg class="open-menu" width="20" height="12">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+
+          <button class="button button--shevron button--padding" type="submit">
+            Buy now
+            <svg class="shevron-right" width="8" height="8">
+              <use href="./images/icons.svg#chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="container container-hero">
+        <div class="hero__title-block">
+          <div class="hero__title-wrap">
+            <h class="hero__title"
+              >ice cream made with <span class="hero__title-span">passion</span>
+            </h>
+            <ul class="hero__list">
+              <li class="hero__item hero__item--margin">
+                <a href="#products" class="hero__link hero__link--red">Products</a>
+              </li>
+              <li class="hero__item">
+                <a href="#advantages" class="hero__link hero__link--white">How it’s made?</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="hero__list-info">
+            <li class="hero__item-info hero__item-info--margin">
+              <p class="hero__number-info">16</p>
+              <p class="hero__text-info">cafes</p>
             </li>
-            <li class="hero__item">
-              <button class="button button--white">How it’s made?</button>
+            <li class="hero__item-info">
+              <p class="hero__number-info">23</p>
+              <p class="hero__text-info">food trucks</p>
             </li>
           </ul>
         </div>
-
-        <div class="hero__franchise">
-          <ul class="hero__franchise-list">
-            <li class="hero__franchise-item">
-              <span class="hero__franchise-number">16</span
-              ><span class="hero__franchise-description">cafes</span>
-            </li>
-            <li class="hero__franchise-item">
-              <span class="hero__franchise-number">23</span
-              ><span class="hero__franchise-description">food trucks</span>
-            </li>
-          </ul>
-        </div>
-
         <div class="hero__description">
           <p class="hero__description-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <button class="arrow-right arrow-right--for-hero" type="button">
+          <button class="arrow-right arrow-right--for-hero" type="submit">
             <svg class="arrow-right__icon arrow-right__icon--for-hero">
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
         </div>
+        <div class="hero__img-frap">
+          <span class="hero__img-span"></span>
+          <img
+            class="hero__img-main"
+            srcset="./images/hero-img.png 1x, ./images/hero-img@2x.png 2x"
+            src="./images/hero-img.png"
+            alt="Isecream"
+          />
+        </div>
+        <img
+          class="hero__img-milk"
+          srcset="./images/hero-img-1.png 1x, ./images/hero-img-1@2x.png 2x"
+          src="./images/hero-img-1.png"
+          alt="Milk"
+        />
+        <img
+          class="hero__img-girl"
+          srcset="./images/hero-img-2.png 1x, ./images/hero-img-2@2x.png 2x"
+          src="./images/hero-img-2.png"
+          alt="Girl"
+        />
       </div>
     </div>
+    <div class="backdrop"></div>
   </div>
 </section>
