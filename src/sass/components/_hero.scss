@@ -4,6 +4,8 @@
   height: 502px;
   background-color: $color-bg;
 
+  overflow: hidden;
+
   @media screen and (min-width: 768px) {
     height: 399px;
   }
