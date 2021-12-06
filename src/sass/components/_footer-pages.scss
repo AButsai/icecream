@@ -1,4 +1,12 @@
 .footer {
+  padding-top: 113px;
+  @media screen and (min-width: 768px) {
+    padding-top: 165px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 158px;
+  }
+
   background-color: $color-bg-footer;
   .container {
     margin-bottom: 49px;
@@ -162,7 +170,7 @@
       margin-bottom: 15px;
     }
 
-    &__text-slog {
+    &__text-second {
       font-size: 58px;
       line-height: 1.138;
       letter-spacing: 0.06em;

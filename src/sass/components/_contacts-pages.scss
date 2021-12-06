@@ -18,7 +18,7 @@
   }
 }
 .contacts-section {
-  padding: 48px 0 113px;
+  padding-top: 86px;
   margin: 0 auto;
   background-color: $color-bg-footer;
   background-repeat: no-repeat;
@@ -29,26 +29,26 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding: 69px 0 158px;
+    padding-top: 128px;
 
     background: linear-gradient(to bottom, $color-white 197px, $color-bg-footer 197px);
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 92px 0 165px;
+    padding-top: 132px;
 
     @media screen and (min-device-pixel-ratio: 1),
       screen and (min-resolution: 96dpi),
       screen and (min-resolution: 1dppx) {
       background-image: url('../images/sectionbg2.png'),
-        linear-gradient(to bottom, $color-white 230px, $color-bg-footer 230px);
+        linear-gradient(to bottom, $color-white 234px, $color-bg-footer 230px);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url('../images/sectionbg2-@x2.png'),
-        linear-gradient(to bottom, $color-white 230px, $color-bg-footer 230px);
+        linear-gradient(to bottom, $color-white 234px, $color-bg-footer 230px);
 
       background-size: 1920px 384px, auto;
       background-position: center center, center top;
