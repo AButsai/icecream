@@ -1,4 +1,12 @@
 .footer {
+  padding-top: 113px;
+  @media screen and (min-width: 768px) {
+    padding-top: 165px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 158px;
+  }
+
   background-color: $color-bg-footer;
   .container {
     margin-bottom: 49px;
