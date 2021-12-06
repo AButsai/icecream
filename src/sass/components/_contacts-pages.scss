@@ -61,10 +61,11 @@
   color: $color-white;
   text-transform: uppercase;
   display: inline-flex;
-  padding: 0 25px;
+  padding: 0 24px;
   margin-bottom: 25px;
   justify-content: center;
   align-items: center;
+  line-height: 1.86;
   letter-spacing: 0.04em;
   border-radius: 4px;
 
@@ -75,10 +76,12 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 30px;
+    padding: 0 15px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
+    padding: 0 15px;
   }
 }
 
