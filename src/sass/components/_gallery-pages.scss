@@ -72,12 +72,23 @@
         //     color: #fff;
         //     text-align: center;
         // }
+        .gallery-gradient {
+            background-image: -webkit-linear-gradient(-90deg, #fff5f6 3%, #FFFFFF 50%);
+            // background-color: 20% #fff5f6 80% transparent;
+            // display: inline-block;
+            // position: relative;
+            // padding: 0 10px;
+            // background-image: linear-gradient(transparent, transparent 29px, #fff5f6 0);
+            // background-size: 100% 30px;
+            // z-index: 1;
+        }
+        
         .gallery-collage_photo {
             @media screen and (min-width: 1150px) {
                 width: 1280px;
                 left: 0px;
             }
-            @media screen and (min-width: 760px) {
+            @media screen and (min-width: 760px)and (max-width: 1150px) {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -126,6 +137,7 @@
             font-weight: 500;
             letter-spacing: 0.04em;
             background-color: #FAFAFA;
+            margin: 0 10%;
             @media screen and (min-width: 1199px) {
                 margin-top: 89 px;
                 font-size: 16px;
@@ -176,13 +188,13 @@
         
         .quotes_for_gallery {
             position: relative;
-            background: #E1E1E1;
-            // margin-left: 150px;
+            background-color: #FAFAFA;
+            width: 54px;
+            height: 40px;
+            float: left;
+            margin-bottom: -10px;
             z-index: 2;
-            @media screen and (min-width: 1280px) {
-                width: 54px;
-                height: 40px;
-            }
+            margin-left: 10%;
         }
         
         .carousel-control-next-icon,
