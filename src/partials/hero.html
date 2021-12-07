@@ -83,10 +83,51 @@
             incididunt ut labore et
           </p>
           <button class="arrow-right arrow-right--for-hero" type="submit">
-            <svg class="arrow-right__icon arrow-right__icon--for-hero">
+            <svg class="arrow-right__icon arrow-right__icon--for-hero" open-hero-modal>
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
+          <div class="hero__backdrop is-hidden">
+            <div class="hero__modal">
+              <div class="hero__close-modal">
+                <svg class="close-menu" width="20" height="12" close-hero-modal>
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </div>
+              <div class="hero__description-wrap">
+                <h2 class="main-sub-text hero__description-title">
+                  Description of the delicious
+                  <span class="main-text hero__description-title--span">icecream</span>
+                </h2>
+                <p class="hero__description-text--modal">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nihil quod
+                  perferendis molestias itaque porro doloribus, minus deleniti dicta fugit facilis
+                  soluta, repellendus totam aut. Eveniet consequatur reiciendis unde quibusdam.
+                </p>
+              </div>
+              <div class="hero__description-wrap">
+                <h2 class="main-sub-text hero__description-title">
+                  100% natural <span class="main-text hero__description-title--span">products</span>
+                </h2>
+                <p class="hero__description-text--modal">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nihil quod
+                  perferendis molestias itaque porro doloribus, minus deleniti dicta fugit facilis
+                  soluta, repellendus totam aut. Eveniet consequatur reiciendis unde quibusdam.
+                </p>
+              </div>
+              <div class="hero__description-wrap">
+                <h2 class="main-sub-text hero__description-title">
+                  tradition and love
+                  <span class="main-text hero__description-title--span">how it’s made?</span>
+                </h2>
+                <p class="hero__description-text--modal">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nihil quod
+                  perferendis molestias itaque porro doloribus, minus deleniti dicta fugit facilis
+                  soluta, repellendus totam aut. Eveniet consequatur reiciendis unde quibusdam.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="hero__img-frap">
           <span class="hero__img-span"></span>
@@ -111,6 +152,5 @@
         />
       </div>
     </div>
-    <div class="backdrop"></div>
   </div>
 </section>

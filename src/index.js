@@ -17,13 +17,23 @@ import './sass/main.scss';
 
 const openMenu = document.querySelector('.open-menu');
 const closeMenu = document.querySelector('.close-menu');
-const buttonMenu = document.querySelector('.header__menu');
+const openModalHero = document.querySelector('[open-hero-modal]');
+const closeModalHero = document.querySelector('[close-hero-modal]');
+const headerMenu = document.querySelector('.header__menu');
 const bodyToggleClass = document.querySelector('body');
+const heroModal = document.querySelector('.hero__backdrop');
 
 const openMenuMobile = openMenu.addEventListener('click', toggleMenu);
 const closeMenuMobile = closeMenu.addEventListener('click', toggleMenu);
+const openModal = openModalHero.addEventListener('click', toggleModalHero);
+const closeModal = closeModalHero.addEventListener('click', toggleModalHero);
 
 function toggleMenu(e) {
-  buttonMenu.classList.toggle('is-open');
+  headerMenu.classList.toggle('is-open');
+  bodyToggleClass.classList.toggle('is-open');
+}
+
+function toggleModalHero(e) {
+  heroModal.classList.toggle('is-hidden');
   bodyToggleClass.classList.toggle('is-open');
 }

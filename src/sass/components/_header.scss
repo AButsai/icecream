@@ -77,7 +77,10 @@
 
 .open-menu {
   fill: $color-primary;
-  margin-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -92,6 +95,13 @@
 
   @media screen and (min-width: 1280px) {
     display: none;
+  }
+}
+
+// для модального окна
+.hero__close-modal {
+  & .close-menu {
+    display: block;
   }
 }
 
