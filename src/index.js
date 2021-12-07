@@ -5,6 +5,7 @@ import './sass/main.scss';
     openModalBtn: document.querySelector('[map-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[map-modal]'),
+    body: document.querySelector('body'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -12,6 +13,7 @@ import './sass/main.scss';
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('is-open');
   }
 })();
 
