@@ -1,3 +1,15 @@
+.close-menu {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  fill: #ffffff;
+}
+@media screen and (min-width: 1280px) {
+  .close-menu {
+    display: none;
+  }
+}
 
-
-
+.hero__close-modal .close-menu {
+  display: block;
+}
