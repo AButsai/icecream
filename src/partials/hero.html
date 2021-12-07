@@ -16,7 +16,7 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
 
-          <button class="button button--shevron button--margin" type="submit">
+          <button class="button button--shevron button--margin" type="button" open-buy-modal-1>
             Buy now
             <svg class="shevron-right" width="8" height="8">
               <use href="./images/icons.svg#chevron-right"></use>
@@ -36,14 +36,66 @@
           </nav>
         </div>
 
-        <div class="header__backdrop is-hidden"></div>
+        <div class="header__backdrop">
+          <form class="header__modal">
+            <div class="header__close-modal">
+              <svg class="close-menu" width="20" height="12" close-buy-modal>
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </div>
+
+            <div class="header__inputs">
+              <div class="header__field">
+                <label class="header__label">
+                  <span class="header__label-text"></span>
+                  <input type="text" class="header__input" />
+                </label>
+              </div>
+              <div class="header__field">
+                <label class="header__label">
+                  <span class="header__label-text"></span>
+                  <input type="text" class="header__input" />
+                </label>
+              </div>
+              <div class="header__field">
+                <label class="header__label">
+                  <span class="header__label-text"></span>
+                  <input type="tel" class="header__input" />
+                </label>
+              </div>
+              <div class="header__field">
+                <label class="header__label">
+                  <span class="header__label-text"></span>
+                  <input type="email" class="header__input" />
+                </label>
+              </div>
+              <div class="header__field">
+                <label class="header__label">
+                  <span class="header__label-text"></span>
+                  <textarea
+                    class="header__input header__textarea"
+                    name="comment"
+                    id="comment"
+                    rows="10"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+            <button class="button button--shevron button--padding" type="submit">
+              Buy now
+              <svg class="shevron-right" width="8" height="8">
+                <use href="./images/icons.svg#chevron-right"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
 
         <div class="button-wrap">
           <svg class="open-menu" width="20" height="12">
             <use href="./images/icons.svg#menu"></use>
           </svg>
 
-          <button class="button button--shevron button--padding" type="submit">
+          <button class="button button--shevron button--padding" type="button" open-buy-modal>
             Buy now
             <svg class="shevron-right" width="8" height="8">
               <use href="./images/icons.svg#chevron-right"></use>
