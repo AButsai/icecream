@@ -22,6 +22,7 @@ const closeModalHero = document.querySelector('[close-hero-modal]');
 const headerMenu = document.querySelector('.header__menu');
 const bodyToggleClass = document.querySelector('body');
 const heroModal = document.querySelector('.hero__backdrop');
+const heroModal = document.querySelector('.header__backdrop');
 
 const openMenuMobile = openMenu.addEventListener('click', toggleMenu);
 const closeMenuMobile = closeMenu.addEventListener('click', toggleMenu);
