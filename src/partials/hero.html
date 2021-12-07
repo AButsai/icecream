@@ -48,28 +48,28 @@
               <div class="header__field">
                 <label class="header__label">
                   <span class="header__label-text"></span>
-                  <input type="text" class="header__input" />
+                  <input type="text" class="header__input" placeholder="Name" />
                 </label>
               </div>
               <div class="header__field">
                 <label class="header__label">
                   <span class="header__label-text"></span>
-                  <input type="text" class="header__input" />
+                  <input type="text" class="header__input" placeholder="Products" />
                 </label>
               </div>
               <div class="header__field">
                 <label class="header__label">
                   <span class="header__label-text"></span>
-                  <input type="tel" class="header__input" />
+                  <input type="tel" class="header__input" placeholder="Telphone" />
                 </label>
               </div>
               <div class="header__field">
                 <label class="header__label">
                   <span class="header__label-text"></span>
-                  <input type="email" class="header__input" />
+                  <input type="email" class="header__input" placeholder="Email" />
                 </label>
               </div>
-              <div class="header__field">
+              <div class="header__field header__field--last">
                 <label class="header__label">
                   <span class="header__label-text"></span>
                   <textarea
@@ -77,17 +77,32 @@
                     name="comment"
                     id="comment"
                     rows="10"
+                    placeholder="Comments"
                   ></textarea>
                 </label>
               </div>
             </div>
-            <button class="button button--shevron button--padding" type="submit">
+            <button class="button button--shevron" type="submit">
               Buy now
               <svg class="shevron-right" width="8" height="8">
                 <use href="./images/icons.svg#chevron-right"></use>
               </svg>
             </button>
           </form>
+        </div>
+
+        <div class="popap__backdrop is-hidden">
+          <div class="popap__modal">
+            <svg class="close-menu" width="20" height="12">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+            <div class="poap__text-wrap">
+              <p class="popap__title">Thank you for your purchase</p>
+              <p class="popap__text">
+                A manager will contact you within a short time. Have a nice day!
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="button-wrap">
