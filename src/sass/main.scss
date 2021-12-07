@@ -9,7 +9,9 @@
 @import './base/utils';
 @import './components/button-description';
 @import './components/button';
-@import './components/header-hero-page';
+@import './components/header';
+@import './components/modal-buy';
+@import './components/hero';
 @import './components/products-pages';
 @import './components/about-page';
 @import './components/advantages-page.scss';
@@ -17,3 +19,4 @@
 @import './components/customer-pages';
 @import './components/contacts-pages';
 @import './components/footer-pages';
+@import './components/modal-hero';

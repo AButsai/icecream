@@ -9,9 +9,8 @@ body {
 
 // Это для модалок
 // потом js прикрутим
-
-body.modal-open,
-body.menu-open {
+body.is-open,
+body.modal-open {
   overflow: hidden;
 }
 
@@ -23,7 +22,7 @@ img {
 
 // проверте все ли правильно с расчетом контейнера
 .container {
-  max-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
