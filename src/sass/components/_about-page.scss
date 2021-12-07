@@ -86,14 +86,17 @@ color: $color-primary;
         
   }
 }
-.about-section__img{
-    margin-right: 16px;
 
+.about-section__img{
+  width: 280px;
+  height: 279px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px){
     .about-section__img{
     width: 340px;
     height: 340px;
+    margin-right: 16px;
   }
 }
 
@@ -115,14 +118,7 @@ color: $color-primary;
 
 
 
-.about-section__description-1{
-  padding: 0px 0px 0px 10px;
-}
-@media screen and (min-width: 768px){
-  .about-section__description-1{
-     padding: 0;
-}
-}
+
 .about-section__desc{
     font-style: normal;
     font-weight: 500;
@@ -131,7 +127,6 @@ color: $color-primary;
     color: $color-black;
     margin-bottom: 47px;
     margin-top: 46px;
-   
 }
 
 
