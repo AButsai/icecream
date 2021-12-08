@@ -1,7 +1,7 @@
 .hro-header-wrapper {
   position: relative;
   margin: 0 auto;
-  max-width: 320px;
+  max-width: 400px;
   height: 100%;
 
   @media screen and (min-width: 768px) {
@@ -136,6 +136,11 @@
 .hero__link--red {
   color: $color-white;
   background-color: $color-primary;
+  &:focus-within,
+  &:hover {
+    color: $color-white;
+    background-color: $color-hover-btn-first;
+  }
 }
 
 .hero__link--white {
@@ -145,6 +150,7 @@
 
 .hero__link--white:focus-within,
 .hero__link--white:hover {
+  color: $color-primary;
   background-color: $color-hover-btn-second;
 }
 

@@ -34,8 +34,8 @@ function toggleMenu(e) {
 }
 
 // модальное окно в секции Hero
-const openModalHero = document.querySelector('[open-hero-modal]');
-const closeModalHero = document.querySelector('[close-hero-modal]');
+const openModalHero = document.querySelector('.open-hero-modal');
+const closeModalHero = document.querySelector('.close-hero-modal');
 
 const heroModal = document.querySelector('.hero__backdrop');
 
@@ -48,9 +48,9 @@ function toggleModalHero(e) {
 }
 
 // модальное окно в Header
-const openModalHeader1 = document.querySelector('[open-buy-modal-1]');
-const openModalHeader = document.querySelector('[open-buy-modal]');
-const closeModalHeader = document.querySelector('[close-buy-modal]');
+const openModalHeader1 = document.querySelector('.open-buy-modal-one');
+const openModalHeader = document.querySelector('.open-buy-modal');
+const closeModalHeader = document.querySelector('.close-buy-modal');
 
 const headerModal = document.querySelector('.header__backdrop');
 
