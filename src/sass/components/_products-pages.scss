@@ -28,6 +28,7 @@
             margin-right: 0px;
         }
     }
+  }
 }
 
 .products__list {
@@ -50,7 +51,7 @@
 }
 
 .ice_cream {
-    background-color: $color-bg;
+  background-color: $color-bg;
 }
 
 .ice__coffee {
@@ -83,17 +84,17 @@
 }
 
 .product__images {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-125px);
+  @media screen and (min-width: 768px) {
     transform: translateY(-125px);
-    @media screen and (min-width: 768px) {
-        transform: translateY(-125px);
-        width: 100%;
-    }
-    @media screen and (min-width: 1280px) {
-        transform: translateY(-210px);
-        width: 335px;
-    }
+    width: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-210px);
+    width: 335px;
+  }
 }
 
 .products__name {
