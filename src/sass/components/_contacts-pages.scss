@@ -121,6 +121,7 @@
     color: $color-black;
     @media screen and (min-width: 768px) {
       margin-bottom: 14px;
+      white-space: nowrap;
     }
   }
   &--black {
