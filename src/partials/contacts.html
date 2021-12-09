@@ -109,7 +109,7 @@
         </button>
       </li>
       <li class="contacts__modal-item">
-        <button type="button" class="contacts__button button button--white">
+        <button type="button" class="contacts__button button button--white" data-franshise-open>
           Franchise
           <svg class="contacts__arrow">
             <use href="./images/icons.svg#chevron-right"></use>
@@ -131,6 +131,44 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
+      </div>
+    </div>
+    <div class="backdrop-location is-hidden" data-franshise>
+      <div class="modal-franshise">
+        <button class="modal-franshise__close-btn" type="button" data-franshise-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="franshise-head">Do you want to have your own business?</h3>
+        <p class="modal-franshise__text">We have the best offer for you.</p>
+        <p class="modal-franshise__text">Franchise!!!</p>
+        <p class="modal-franshise__text">Leave us your contacts and we`ll call you back! </p>
+        <div class="franshise-form-container">
+          <form name="modal-franshise-form">
+            <div class="label-container">
+              <label for="modal-name">
+                <span class="modal__label">Name</span>
+              </label>
+              <input class="modal__input" type="text" name="name" id="modal-name" />
+            </div>
+            <div class="label-container">
+              <label for="modal-phone">
+                <span class="modal__label">Phone</span>
+              </label>
+              <input class="modal__input" type="tel" name="phone" id="modal-phone" />
+            </div>
+            <div class="label-container">
+              <label for="modal-mail">
+                <span class="modal__label">Email</span>
+              </label>
+              <input class="modal__input" type="email" name="mail" id="modal-mail" />
+            </div>
+          </form>
+        </div>
+        <button type="submit" class="button button--white">
+          <span class="">Send!</span>
+        </button>
       </div>
     </div>
   </div>
