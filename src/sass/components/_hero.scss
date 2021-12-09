@@ -32,6 +32,9 @@
 .hero__title-block {
   margin-top: 137px;
 
+  transition: transform 1000ms $timing-function 1200ms;
+  transform: scale(0, 0);
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -258,6 +261,9 @@
   border-radius: 50%;
   background-color: $color-bg-circle;
 
+  transition: transform 1000ms $timing-function;
+  transform: scale(0, 0);
+
   @media screen and (min-width: 768px) {
     bottom: 46px;
     left: 307px;
@@ -275,21 +281,22 @@
 
 .hero__img-main {
   position: absolute;
-  bottom: 0px;
+  bottom: -7px;
   left: 117px;
   width: 171px;
   height: 410px;
   z-index: 2;
 
+  transition: transform 1000ms $timing-function;
+  transform: translate(0, -125%);
+
   @media screen and (min-width: 768px) {
-    bottom: 0;
     left: 378px;
     width: 143px;
     height: 336px;
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: 0;
     left: 594px;
     width: 236px;
     height: 557px;
@@ -298,6 +305,9 @@
 
 .hero__img-milk {
   display: none;
+
+  transition: transform 1000ms $timing-function 750ms;
+  transform: translate(-293%, 0);
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -319,10 +329,13 @@
 .hero__img-girl {
   display: none;
 
+  transition: transform 1000ms $timing-function 1000ms;
+  transform: translate(0, 100%);
+
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     right: 34px;
     width: 168px;
     height: 133px;
