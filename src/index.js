@@ -72,8 +72,8 @@ window.onload = function () {
     const span = document.querySelector('.hero__img-span--parallax');
     const titleBox = document.querySelector('.hero__title-block');
 
-    span.style.cssText = `transform: scale(100%, 100%);`;
     titleBox.style.cssText = `transform: scale(100%, 100%);`;
+    span.style.cssText = `transform: scale(100%, 100%);`;
 
     const forMainImg = 50;
     const forMilkImg = 40;
