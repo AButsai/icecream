@@ -7,13 +7,28 @@ import './sass/main.scss';
     modal: document.querySelector('[map-modal]'),
     body: document.querySelector('body'),
   };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('is-open');
+  }
+})();
+//franchaise script
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-franshise-open]'),
+    closeModalBtn: document.querySelector('[data-franshise-close]'),
+    modal: document.querySelector('[data-franshise]'),
+  };
+
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('is-open');
+    
   }
 })();
 
