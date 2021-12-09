@@ -3,10 +3,6 @@
   @media screen and (min-width: 768px) {
     padding-top: 165px;
   }
-  // @media screen and (min-width: 768px) and (max-width: 1279px) {
-  //   padding: 158px;
-  // }
-
   background-color: $color-bg-footer;
   .container {
     margin-bottom: 49px;
@@ -39,15 +35,10 @@
     justify-content: flex-end;
     margin-bottom: 46px;
   }
-
-  &__social-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &__social-container {
+  &__social-link {
     display: flex;
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     color: $color-white;
     background-color: $color-hover-social;
     border-radius: 50%;
@@ -63,20 +54,25 @@
       color: $color-white;
     }
   }
+  &__social-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
   &__social-icon {
     width: 20px;
     height: 20px;
-
     fill: currentColor;
   }
-
-  &__contact-tel {
+  &__tel-container {
     display: flex;
     justify-content: flex-end;
-    font-weight: 700;
+    align-items: center;
+    letter-spacing: 0;
     font-size: 12px;
-    line-height: 1.833;
+    line-height: 1.86;
+    font-weight: 700;
+  }
+  &__contact-tel {
     color: $color-black;
   }
 
@@ -88,7 +84,6 @@
   &__copyright {
     padding: 22px 0 25px 0;
     border-top: 1px solid $color-contacts-border;
-
     text-align: center;
   }
 
@@ -128,11 +123,10 @@
       font-size: 48px;
       letter-spacing: 0.06em;
     }
-
-    &__contact-tel {
-      flex-wrap: wrap;
+    &__tel-container {
       font-size: 14px;
-      line-height: 1, 857;
+
+      letter-spacing: 0.04em;
     }
 
     &__copyright-text {
@@ -140,11 +134,6 @@
       font-size: 14px;
       line-height: 1.5;
       letter-spacing: 0.02em;
-    }
-
-    &__social-sprite {
-      width: 34px;
-      height: 34px;
     }
   }
 }
@@ -184,6 +173,10 @@
 
     &__social-list {
       margin-bottom: 50px;
+    }
+    &__tel-container {
+      font-size: 16px;
+      letter-spacing: 0.02em;
     }
     &__copyright {
       padding: 9px 0 10px 0;

@@ -2,27 +2,31 @@
 <section class="contacts-section" id="contacts">
   <div class="container">
     <!-- невидимый хедер -->
-    <h1 class="visually-hidden">Contacts</h1>
+    <h2 class="visually-hidden">Contacts</h2>
     <!-- список карточек контактов -->
     <ul class="contacts">
       <li class="contacts__card">
         <p class="contacts__card-category">cafe</p>
-        <ul class="contacts__card-item">
+        <div class="contacts__card-item">
           <!-- Город -->
-          <li class="contacts__card--black">Chicago</li>
-          <li class="contacts__card--grey">
+          <h3 class="contacts__card--city">Chicago</h3>
+          <p class="contacts__card--grey">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
-          </li>
-        </ul>
+          </p>
+        </div>
         <!-- Время работы -->
         <ul class="contacts__working-time">
-          <li class="contacts__card--black">Monday - Friday</li>
-          <li class="contacts__card--pink">
-            <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+          <li class="contacts__time-item">
+            <p class="contacts__card--black">Monday - Friday</p>
+            <p class="contacts__card--pink">
+              <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+            </p>
           </li>
-          <li class="contacts__card--black">Saturday - Sunday</li>
-          <li class="contacts__card--pink">
-            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+          <li class="contacts__time-item">
+            <p class="contacts__card--black">Saturday - Sunday</p>
+            <p class="contacts__card--pink">
+              <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+            </p>
           </li>
         </ul>
         <ul class="adress__list">
@@ -36,22 +40,26 @@
       </li>
       <li class="contacts__card">
         <p class="contacts__card-category">food truck</p>
-        <ul class="contacts__card-item">
+        <div class="contacts__card-item">
           <!-- Город -->
-          <li class="contacts__card--black">Los Angeles</li>
-          <li class="contacts__card--grey">
+          <h3 class="contacts__card--city">Los Angeles</h3>
+          <p class="contacts__card--grey">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
-          </li>
-        </ul>
+          </p>
+        </div>
         <!-- Время работы -->
         <ul class="contacts__working-time">
-          <li class="contacts__card--black">Monday - Friday</li>
-          <li class="contacts__card--pink">
-            <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+          <li class="contacts__time-item">
+            <p class="contacts__card--black">Monday - Friday</p>
+            <p class="contacts__card--pink">
+              <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+            </p>
           </li>
-          <li class="contacts__card--black">Saturday - Sunday</li>
-          <li class="contacts__card--pink">
-            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+          <li class="contacts__time-item">
+            <p class="contacts__card--black">Saturday - Sunday</p>
+            <p class="contacts__card--pink">
+              <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+            </p>
           </li>
         </ul>
         <ul class="adress__list">
@@ -65,22 +73,26 @@
       </li>
       <li class="contacts__card">
         <p class="contacts__card-category">cafe</p>
-        <ul class="contacts__card-item">
+        <div class="contacts__card-item">
           <!-- Город -->
-          <li class="contacts__card--black">New York</li>
-          <li class="contacts__card--grey">
+          <h3 class="contacts__card--city">New York</h3>
+          <p class="contacts__card--grey">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
-          </li>
-        </ul>
+          </p>
+        </div>
         <!-- Время работы -->
         <ul class="contacts__working-time">
-          <li class="contacts__card--black">Monday - Friday</li>
-          <li class="contacts__card--pink">
-            <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+          <li class="contacts__time-item">
+            <p class="contacts__card--black">Monday - Friday</p>
+            <p class="contacts__card--pink">
+              <time datetime="06:00">06:00 AM</time> - <time datetime="22:00">10:00 PM</time>
+            </p>
           </li>
-          <li class="contacts__card--black">Saturday - Sunday</li>
-          <li class="contacts__card--pink">
-            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+          <li class="contacts__time-item">
+            <p class="contacts__card--black">Saturday - Sunday</p>
+            <p class="contacts__card--pink">
+              <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 PM</time>
+            </p>
           </li>
         </ul>
         <ul class="adress__list">
@@ -118,13 +130,9 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <iframe
-          class="google-maps"
+        <iframe class="google-maps"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d736.2909471351214!2d30.533831958462414!3d50.426283998843275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf11a1516e25%3A0x3038967554e54e1!2z0JLQvtC70L3QsA!5e0!3m2!1sru!2sua!4v1638725018370!5m2!1sru!2sua"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+          style="border: 0" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </div>

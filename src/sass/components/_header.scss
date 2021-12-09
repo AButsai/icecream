@@ -105,6 +105,12 @@
   }
 }
 
+.header__modal {
+  & .close-menu {
+    display: block;
+  }
+}
+
 .button--padding {
   @media screen and (max-width: 767px) {
     display: none;
