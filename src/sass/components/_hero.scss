@@ -30,9 +30,11 @@
 }
 
 .hero__title-block {
+  position: relative;
   margin-top: 137px;
+  z-index: 3;
 
-  transition: transform 1000ms $timing-function 1200ms;
+  transition: transform 1000ms $timing-function;
   transform: scale(0, 0);
 
   @media screen and (min-width: 768px) {
@@ -47,9 +49,7 @@
 }
 
 .hero__title-wrap {
-  position: relative;
   max-width: 218px;
-  z-index: 5;
 
   @media screen and (min-width: 768px) {
     max-width: 162px;
@@ -288,7 +288,7 @@
   z-index: 2;
 
   transition: transform 1000ms $timing-function;
-  transform: translate(0, -125%);
+  transform: translateY(-125%);
 
   @media screen and (min-width: 768px) {
     left: 378px;
@@ -307,7 +307,7 @@
   display: none;
 
   transition: transform 1000ms $timing-function 750ms;
-  transform: translate(-293%, 0);
+  transform: translateX(-293%);
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -330,7 +330,7 @@
   display: none;
 
   transition: transform 1000ms $timing-function 1000ms;
-  transform: translate(0, 100%);
+  transform: translateY(100%);
 
   @media screen and (min-width: 768px) {
     display: block;
