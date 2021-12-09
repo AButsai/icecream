@@ -1,15 +1,15 @@
 .gallery {
-    background-image: -webkit-linear-gradient(-90deg, #fff5f6 5%, #FFFFFF 95%);
+  background-image: -webkit-linear-gradient(-90deg, #fff5f6 5%, #ffffff 95%);
 }
 
 .gallery-collage_photo {
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        left: 0px;
-    }
-    @media screen and (min-width: 768px)and (max-width: 1280px) {
-        margin-left: auto;
-        margin-right: auto;
-        width: 586px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    left: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 586px;
+  }
 }

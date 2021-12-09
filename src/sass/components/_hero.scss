@@ -1,7 +1,7 @@
 .hro-header-wrapper {
   position: relative;
   margin: 0 auto;
-  max-width: 320px;
+  max-width: 400px;
   height: 100%;
 
   @media screen and (min-width: 768px) {
@@ -30,7 +30,12 @@
 }
 
 .hero__title-block {
+  position: relative;
   margin-top: 137px;
+  z-index: 3;
+
+  transition: transform 1000ms $timing-function;
+  transform: scale(0, 0);
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -44,9 +49,7 @@
 }
 
 .hero__title-wrap {
-  position: relative;
   max-width: 218px;
-  z-index: 5;
 
   @media screen and (min-width: 768px) {
     max-width: 162px;
@@ -136,6 +139,11 @@
 .hero__link--red {
   color: $color-white;
   background-color: $color-primary;
+  &:focus-within,
+  &:hover {
+    color: $color-white;
+    background-color: $color-hover-btn-first;
+  }
 }
 
 .hero__link--white {
@@ -145,6 +153,7 @@
 
 .hero__link--white:focus-within,
 .hero__link--white:hover {
+  color: $color-primary;
   background-color: $color-hover-btn-second;
 }
 
@@ -242,9 +251,6 @@
   }
 }
 
-.hero__img-frap {
-}
-
 .hero__img-span {
   position: absolute;
   bottom: 75px;
@@ -254,6 +260,9 @@
   height: 344px;
   border-radius: 50%;
   background-color: $color-bg-circle;
+
+  transition: transform 1000ms $timing-function;
+  transform: scale(0, 0);
 
   @media screen and (min-width: 768px) {
     bottom: 46px;
@@ -272,21 +281,22 @@
 
 .hero__img-main {
   position: absolute;
-  bottom: 0px;
+  bottom: -7px;
   left: 117px;
   width: 171px;
   height: 410px;
   z-index: 2;
 
+  transition: transform 1000ms $timing-function;
+  transform: translateY(-125%);
+
   @media screen and (min-width: 768px) {
-    bottom: 0;
     left: 378px;
     width: 143px;
     height: 336px;
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: 0;
     left: 594px;
     width: 236px;
     height: 557px;
@@ -295,6 +305,9 @@
 
 .hero__img-milk {
   display: none;
+
+  transition: transform 1000ms $timing-function 750ms;
+  transform: translateX(-293%);
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -316,10 +329,13 @@
 .hero__img-girl {
   display: none;
 
+  transition: transform 1000ms $timing-function 1000ms;
+  transform: translateY(100%);
+
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     right: 34px;
     width: 168px;
     height: 133px;

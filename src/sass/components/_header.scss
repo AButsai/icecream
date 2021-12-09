@@ -58,6 +58,18 @@
       transition: transform $duration ease-in-out;
       transform: translateX(0);
     }
+
+    @media screen and (min-width: 992px) {
+      width: 355px;
+    }
+
+    @media screen and (min-width: 1150px) {
+      width: 435px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 460px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
