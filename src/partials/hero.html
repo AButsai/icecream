@@ -1,4 +1,5 @@
-<section class="section section-hero" id="hero">
+<section class="section section-hero">
+  <h2 class="visually-hidden">Hero sections</h2>
   <div class="hro-header-wrapper">
     <header class="header">
       <div class="container container-header">
@@ -16,7 +17,7 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
 
-          <button class="button button--shevron button--margin" type="button" open-buy-modal-1>
+          <button class="button button--shevron button--margin open-buy-modal-one" type="button">
             Buy now
             <svg class="shevron-right" width="8" height="8">
               <use href="./images/icons.svg#chevron-right"></use>
@@ -39,7 +40,7 @@
         <div class="header__backdrop is-hidden">
           <form class="header__modal">
             <div class="header__close-modal">
-              <svg class="close-menu" width="20" height="12" close-buy-modal>
+              <svg class="close-menu close-buy-modal" width="20" height="12">
                 <use href="./images/icons.svg#close"></use>
               </svg>
             </div>
@@ -96,7 +97,7 @@
             <use href="./images/icons.svg#menu"></use>
           </svg>
 
-          <button class="button button--shevron button--padding" type="button" open-buy-modal>
+          <button class="button button--shevron button--padding open-buy-modal" type="button">
             Buy now
             <svg class="shevron-right" width="8" height="8">
               <use href="./images/icons.svg#chevron-right"></use>
@@ -109,9 +110,9 @@
       <div class="container container-hero">
         <div class="hero__title-block">
           <div class="hero__title-wrap">
-            <h class="hero__title"
-              >ice cream made with <span class="hero__title-span">passion</span>
-            </h>
+            <h1 class="hero__title">
+              ice cream made with <span class="hero__title-span">passion</span>
+            </h1>
             <ul class="hero__list">
               <li class="hero__item hero__item--margin">
                 <a href="#products" class="hero__link hero__link--red">Products</a>
@@ -138,14 +139,14 @@
             incididunt ut labore et
           </p>
           <button class="arrow-right arrow-right--for-hero" type="submit">
-            <svg class="arrow-right__icon arrow-right__icon--for-hero" open-hero-modal>
+            <svg class="arrow-right__icon arrow-right__icon--for-hero open-hero-modal">
               <use href="./images/icons.svg#arrow-right"></use>
             </svg>
           </button>
           <div class="hero__backdrop is-hidden">
             <div class="hero__modal">
               <div class="hero__close-modal">
-                <svg class="close-menu" width="20" height="12" close-hero-modal>
+                <svg class="close-menu close-hero-modal" width="20" height="12">
                   <use href="./images/icons.svg#close"></use>
                 </svg>
               </div>
@@ -184,23 +185,23 @@
             </div>
           </div>
         </div>
-        <div class="hero__img-frap">
-          <span class="hero__img-span"></span>
+        <div class="hero__img-frap parallax__conainer">
+          <div class="hero__img-span hero__img-span--parallax"></div>
           <img
-            class="hero__img-main"
+            class="hero__img-main hero__img-main--parallax"
             srcset="./images/hero-img.png 1x, ./images/hero-img@2x.png 2x"
             src="./images/hero-img.png"
             alt="Isecream"
           />
         </div>
         <img
-          class="hero__img-milk"
+          class="hero__img-milk hero__img-milk--parallax"
           srcset="./images/hero-img-1.png 1x, ./images/hero-img-1@2x.png 2x"
           src="./images/hero-img-1.png"
           alt="Milk"
         />
         <img
-          class="hero__img-girl"
+          class="hero__img-girl hero__img-girl--parallax"
           srcset="./images/hero-img-2.png 1x, ./images/hero-img-2@2x.png 2x"
           src="./images/hero-img-2.png"
           alt="Girl"
