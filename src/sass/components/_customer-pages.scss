@@ -97,7 +97,8 @@
     text-align: center;
 }
 
-.color-dot {
+.color-dot::before {
+    content: ". . .";
     color: #C7133E;
     font-weight: 900;
     font-size: 30px;
@@ -129,8 +130,7 @@
         line-height: 216%;
     }
     @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 186%;
+        font-size: 15px;
     }
 }
 
